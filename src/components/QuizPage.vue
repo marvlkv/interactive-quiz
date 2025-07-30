@@ -1,18 +1,3 @@
-<template>
-  <div class="container">
-  <div class="quiz-page">
-    <QuizQuestion
-      v-if="currentQuestion"
-      :question="currentQuestion"
-      @answerSelected="handleAnswer"
-    />
-    <div class="progress">
-      Вопрос {{ currentIndex + 1 }} из {{ questions.length }}
-    </div>
-  </div>
-  </div>
-</template>
-
 <script setup>
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
@@ -129,6 +114,21 @@ function handleAnswer(selectedIndex) {
 }
 </script>
 
+<template>
+  <div class="container">
+  <div class="quiz-page">
+    <div class="progress">
+      Вопрос {{ currentIndex + 1 }} из {{ questions.length }}
+    </div>
+    <QuizQuestion
+      v-if="currentQuestion"
+      :question="currentQuestion"
+      @answerSelected="handleAnswer"
+    />
+  </div>
+  </div>
+</template>
+
 <style scoped>
 .quiz-page {
   padding: 2rem;
@@ -140,6 +140,8 @@ function handleAnswer(selectedIndex) {
 .progress {
   margin-top: 30px;
   font-size: 1.1rem;
-  color: #555;
+  color: #2a98d4;
+  font-size: 30px;
+  font-family: var(--font__family);
 }
 </style>

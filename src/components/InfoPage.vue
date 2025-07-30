@@ -1,3 +1,6 @@
+<script setup>
+</script>
+
 <template>
   <div class="container">
     <div class="description">
@@ -10,12 +13,24 @@
     </div>
 
     <router-link to="/quiz">
-      <button type="button" class="start-button">
+      <button type="submit" class="start-button">
         <img src="../assets/images/начать.png" alt="Начать квиз">
       </button>
     </router-link>
   </div>
 </template>
 
-<script setup>
-</script>
+<style>
+.description{
+    max-width: 50vw;
+    padding-top: 100px;
+    padding-left: 60px;
+    padding-bottom: 90px;
+}
+li{
+    color: #ffffff;
+    font-size: 36px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 30px;
+}
+</style>

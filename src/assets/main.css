@@ -1,3 +1,8 @@
+:root{
+    --font__color: #fff;
+    --font__family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 body{
     background-image: url(../assets/images/fon2.jpg);
     background-size: 100%;
@@ -10,28 +15,18 @@ body{
 .container{
     background-color: rgba(0, 2, 32, 0.9);
     min-height: 100vh;
+    min-width: 60vw;
 }
 p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #fff;
+    color: var(--font__color);
     font-size: 40px;
 }
-.subtitle{
-    text-align: center;
-    padding-top: 150px;
-}
-.name{
-    text-align: center;
-    margin: 80px;
-    margin-bottom: 190px;
-}
-
 button[type=submit] {
     background-color:#163A91;
     margin: 0 auto;
-    /* padding: 15px; */
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     padding-left: 40px;
     padding-right: 40px;
     border: none;
