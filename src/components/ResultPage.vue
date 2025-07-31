@@ -49,7 +49,6 @@ const feedback = computed(() => {
       text: "Вот это уровень. Всё чётко, уверенно, по делу. Продолжай в том же духе — и дальше будет только круче."
     }
   }
-
   return messages[score] ?? { title: "Результат", text: "Молодец, продолжай учиться!" }
 })
 </script>
@@ -58,16 +57,14 @@ const feedback = computed(() => {
   <div class="result-container">
     <div class="container">
       <div class="result">
-        <img src="../assets/images/результаты.png" alt="">
+        <img src="../assets/images/результат.png" alt="">
       </div>
-      <!-- <img src="../assets/images/результат.png" alt=""> -->
       <p>Вы набрали {{ score }} из {{ total }} баллов!</p>
-      <p style="font-size: 60px;">{{ feedback.title }}</p>
+      <p style="font-size: 60px; color: #fff;">{{ feedback.title }}</p>
       <p style="padding: 15px; max-width: 700px; margin: 0 auto;">{{ feedback.text }}</p>
       <router-link to="/">
-        <!-- <button>Пройти снова</button> -->
         <button>
-          <img src="../assets/images/Пройти_снова36.png" alt="">
+          <img src="../assets/images/Пройти снова.png" alt="">
         </button>
       </router-link>
     </div>
@@ -92,7 +89,7 @@ button {
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 60px;
-
+  transition: background-color 0.3s ease;
 }
 button:hover{
   background-color: #081961;
@@ -101,12 +98,8 @@ p{
   margin: 10px;
   padding-top: 40px;
   font-size: 30px;
-  color: #89dcf0;
+  color: #bde6ff;
 }
-/* h2{
-  color: #3969d9;
-  font-family: var(--font__family);
-} */
 .result{
   padding-top: 110px;
 }

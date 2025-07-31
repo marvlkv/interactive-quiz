@@ -18,15 +18,13 @@ function selectAnswer(index) {
 <template>
   <div class="question-container">
     <h2 class="question-text">{{ question.text }}</h2>
-    
     <div class="answers-grid">
       <button
-        v-for="(answer, index) in question.answers"
-        :key="index"
-        class="answer-button"
-        @click="selectAnswer(index)"
-      >
-        {{ answer.text }}
+      v-for="(answer, index) in question.answers"
+      :key="index"
+      class="answer-button"
+      @click="selectAnswer(index)">
+      {{ answer.text }}
       </button>
     </div>
   </div>
@@ -39,12 +37,12 @@ function selectAnswer(index) {
   text-align: center;
 }
 .question-text {
-  margin-bottom: 30px;
-  font-size: 40px;
-  /* font-weight: bold; */
+  margin-bottom: 50px;
+  margin-top: 70px;
+  font-size: 45px;
+  font-weight: normal;
   color: #fff;
   font-family: var(--font__family);
-
 }
 .answers-grid {
   display: grid;
@@ -55,7 +53,7 @@ function selectAnswer(index) {
   padding: 15px;
   font-size: 25px;
   background-color: #163A91;
-  border: 2px;
+  border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;

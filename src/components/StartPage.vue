@@ -4,7 +4,7 @@
 <template>
   <div class="container">
     <div class="subtitle">
-      <img src="../assets/images/Интерактивный квиз2.png" alt="Интерактивный квиз">
+      <img src="../assets/images/Интерактивный квиз.png" alt="Интерактивный квиз">
     </div>
     <div class="name">
       <img src="../assets/images/на стилях и скриптах.png" alt="Название квиза">
@@ -25,6 +25,6 @@
 .name{
     text-align: center;
     margin: 100px;
-    margin-bottom: 180px;
+    margin-bottom: 170px;
 }
 </style>

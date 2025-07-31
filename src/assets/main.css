@@ -2,9 +2,8 @@
     --font__color: #fff;
     --font__family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
 body{
-    background-image: url(../assets/images/fon2.jpg);
+    background-image: url(../assets/images/fon.jpg);
     background-size: 100%;
     display: flex;
     justify-content: center;
@@ -18,7 +17,7 @@ body{
     min-width: 60vw;
 }
 p{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--font__family);
     color: var(--font__color);
     font-size: 40px;
 }
@@ -33,6 +32,7 @@ button[type=submit] {
     border-radius: 6px;
     cursor: pointer;
     display: flex;
+    transition: background-color 0.3s ease;
 }
 button[type=submit]:hover {
   background-color: #081961;

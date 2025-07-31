@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
 import StartPage from '../components/StartPage.vue'
 import InfoPage from '../components/InfoPage.vue'
 import QuizPage from '../components/QuizPage.vue'
@@ -16,5 +15,4 @@ const router = createRouter({
   history: createWebHistory(),
   routes
 })
-
 export default router

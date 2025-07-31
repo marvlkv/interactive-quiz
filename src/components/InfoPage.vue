@@ -6,9 +6,9 @@
     <div class="description">
       <p>Квиз состоит из 9 вопросов, разделённых по уровням сложности:</p>
       <ul>
-        <li>Базовый: вопросы 1–3</li>
+        <li>Лёгкий: вопросы 1–3</li>
         <li>Средний: вопросы 4–6</li>
-        <li>Продвинутый: вопросы 7–9</li>
+        <li>Сложный: вопросы 7–9</li>
       </ul>
     </div>
 
@@ -25,12 +25,12 @@
     max-width: 50vw;
     padding-top: 100px;
     padding-left: 60px;
-    padding-bottom: 90px;
+    padding-bottom: 108px;
 }
 li{
     color: #ffffff;
     font-size: 36px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--font__family);
     margin: 30px;
 }
 </style>

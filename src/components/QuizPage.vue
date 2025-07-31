@@ -3,7 +3,6 @@ import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import QuizQuestion from './QuizQuestion.vue'
 
-// Массив вопросов
 const questions = ref([
   {
     text: 'Какой HTML-тег используется для вставки изображения?',
@@ -105,7 +104,6 @@ function handleAnswer(selectedIndex) {
   if (currentIndex.value + 1 < questions.value.length) {
     currentIndex.value++
   } else {
-    // Переход на страницу результатов
     router.push({
       path: '/result',
       query: { score: score.value, total: questions.value.length }
@@ -136,11 +134,10 @@ function handleAnswer(selectedIndex) {
   flex-direction: column;
   align-items: center;
 }
-
 .progress {
   margin-top: 30px;
   font-size: 1.1rem;
-  color: #2a98d4;
+  color: #bde6ff;
   font-size: 30px;
   font-family: var(--font__family);
 }
